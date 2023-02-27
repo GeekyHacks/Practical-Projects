@@ -37,9 +37,12 @@ The email type only allows emails with a @ and a . in the domain.
         <label for="email"
           >Enter Your Email: <input id="email" type="email" required
         /></label>
+
+        <!-- pattern attribute to define a regular expression that the password 
+          must match to be considered valid.-->
         <label for="new-password"
           >Create a New Password:
-          <input id="new-password" type="password" required
+          <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"
         /></label>
       </fieldset>
       <fieldset></fieldset>
