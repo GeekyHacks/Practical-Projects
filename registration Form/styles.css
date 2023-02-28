@@ -1,16 +1,50 @@
 body {
-    background-color:#1b1b32;
-    color:  #f5f6f7;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-  }
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
 
-  /*The rem unit stands for root em, and is relative to the
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+}
+fieldset {
+  border: 0;
+
+  padding: 2rem 0;
+  /* instead of all this code
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+  */
+  border-bottom:3px solid #3b3b4f;
+}
+/*. You can select the last element of a specific
+ type using the last-of-type CSS pseudo-class
+
+p:last-of-type { }
+*/
+
+fieldset:last-of-type{
+  border-bottom:none;
+}
+/*The rem unit stands for root em, and is relative to the
    font size of the html element.
    add a margin of 0.5rem 0, to separate them from each other.
    */
-  label{
-    display:block;
-    margin: 0.5rem 0;
-  }
+label {
+  display: block;
+  margin: 0.5rem 0;
+}

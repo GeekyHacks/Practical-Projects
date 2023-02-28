@@ -29,20 +29,20 @@ The email type only allows emails with a @ and a . in the domain.
  The password type obscures the input, and warns if the site does not use HTTPS.-->
 
         <label for="first-name"
-          >Enter Your First Name: <input type="text" id="first-name" required
+          >Enter Your First Name: <input name="radio" type="text" id="first-name" required
         /></label>
         <label for="last-name"
-          >Enter Your Last Name: <input id="last-name" type="text" required
+          >Enter Your Last Name: <input name="radio" id="last-name" type="text" required
         /></label>
         <label for="email"
-          >Enter Your Email: <input id="email" type="email" required
+          >Enter Your Email: <input name="radio" id="email" type="email" required
         /></label>
 
         <!-- pattern attribute to define a regular expression that the password 
           must match to be considered valid.-->
         <label for="new-password"
           >Create a New Password:
-          <input
+          <input name="radio"
             id="new-password"
             type="password"
             required
@@ -51,7 +51,7 @@ The email type only allows emails with a @ and a . in the domain.
       </fieldset>
       <fieldset>
         <label for="personal-account"
-          ><input id="personal-account" type="radio" name="account-type" />
+          ><input  id="personal-account" type="radio" name="account-type" />
           Personal Account</label
         >
         <label for="business-account"
@@ -68,10 +68,10 @@ The email type only allows emails with a @ and a . in the domain.
       </fieldset>
       <fieldset>
         <label for="profile-picture"
-          >Upload a profile picture: <input id="profile-picture" type="file" />
+          >Upload a profile picture: <input name="radio" id="profile-picture" type="file" />
         </label>
         <label for="age">
-          Input your age (years): <input id="age" type="number" min="13" max="120"
+          Input your age (years): <input name="radio" id="age" type="number" min="13" max="120"
         /></label>
         <!--the select element. The select element is a container for a 
           group of option elements, and the option element acts 
@@ -81,7 +81,7 @@ The email type only allows emails with a @ and a . in the domain.
           to be given a value attribute. 
         Without which, the text content of the option will be submitted to the server.
        -->
-          <label for="referrer"> How did you hear about us? <select name="" id="referrer"> <option value=""></option>
+          <label for="referrer"> How did you hear about us? <select name="radio" id="referrer"> <option value=""></option>
             <option value="">(select one)</option>
             <option value="1">News</option>
             <option value="2">YouTube Channel</option>
@@ -93,7 +93,7 @@ The email type only allows emails with a @ and a . in the domain.
       To give Campers an idea of what to put in their bio, the placeholder 
       attribute is used.The placeholder
        accepts a text value, which is displayed until the user starts typing.-->
-               <label for="bio" >Provide a bio: <textarea placeholder="I like coding on the" id="bio" cols="30" rows="10"></textarea></label>
+               <label for="bio" >Provide a bio: <textarea name="radio" placeholder="I like coding on the" id="bio" cols="30" rows="10"></textarea></label>
       </fieldset>
       <fieldset></fieldset>
       <!-- The first input element with a type of submit is automatically set 
@@ -102,7 +102,7 @@ The email type only allows emails with a @ and a . in the domain.
    to the input elements in the first fieldset.
 Now, if you try to submit the form without filling in the required 
 fields, you will see an error message-->
-      <input type="submit" value="Submit" />
+      <input name="radio" type="submit" value="Submit" />
     </form>
   </body>
 </html>
