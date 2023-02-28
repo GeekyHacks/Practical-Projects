@@ -67,11 +67,11 @@ The email type only allows emails with a @ and a . in the domain.
         </label>
       </fieldset>
       <fieldset>
-        <label for="image"
-          >Upload a profile picture: <input type="file" />
+        <label for="profile-picture"
+          >Upload a profile picture: <input id="profile-picture" type="file" />
         </label>
-        <label>
-          Input your age (years): <input type="number" min="13" max="120"
+        <label for="age">
+          Input your age (years): <input id="age" type="number" min="13" max="120"
         /></label>
         <!--the select element. The select element is a container for a 
           group of option elements, and the option element acts 
@@ -80,18 +80,20 @@ The email type only allows emails with a @ and a . in the domain.
          a useful value to the server. As such, each option needs
           to be given a value attribute. 
         Without which, the text content of the option will be submitted to the server.
-        -->
-          <label for=""> How did you hear about us? <select name="" id=""> <option value=""></option>
+       -->
+          <label for="referrer"> How did you hear about us? <select name="" id="referrer"> <option value=""></option>
             <option value="">(select one)</option>
             <option value="1">News</option>
             <option value="2">YouTube Channel</option>
             <option value="3">Forum</option>
             <option value="4">Other</option> </select></label>
-
             <!--The textarea element acts like an input element of type text, 
               but comes with the added benefit of being able
-               to receive multi-line text, and an initial number of text rows and columns.-->
-               <label for="">Provide a bio: <textarea name="" id="" cols="30" rows="10"></textarea></label>
+               to receive multi-line text, and an initial number of text rows and columns.
+      To give Campers an idea of what to put in their bio, the placeholder 
+      attribute is used.The placeholder
+       accepts a text value, which is displayed until the user starts typing.-->
+               <label for="bio" >Provide a bio: <textarea placeholder="I like coding on the" id="bio" cols="30" rows="10"></textarea></label>
       </fieldset>
       <fieldset></fieldset>
       <!-- The first input element with a type of submit is automatically set 
