@@ -45,7 +45,25 @@ fieldset:last-of-type{
 input, textarea, select{
   width: 100%;
   margin: 10px 0 0 0; /*top have margin only*/
+  min-height: 2em;
 }
+
+input, textarea{
+  background-color: #0a0a23;
+  /*this will remove the default white border*/
+  border: 1px solid #0a0a23;
+  /*to see the text you type*/
+  color: #ffffff;
+  min-height:2em;
+} 
+/* you can use an attribute selector, which 
+selects an element based on the given attribute value.
+input[name="password"]  */
+input[name="submit"]{
+  display:block;
+  width:60%;
+}
+
 /*The rem unit stands for root em, and is relative to the
    font size of the html element.
    add a margin of 0.5rem 0, to separate them from each other.
@@ -61,5 +79,4 @@ label {
   margin:0 0.5em 0 0;
   vertical-align: middle;
 
-  
 }
