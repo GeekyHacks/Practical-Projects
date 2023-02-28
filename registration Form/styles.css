@@ -63,14 +63,16 @@ input[type="submit"]{
   display:block;
   width:60%;
   /* this will center it to the form*/
-  margin: 1em auto 1em auto;
-  min-width:300px;
+  margin:0 auto;
   height: 2em;
   font-size:1.1rem;
-  background-color:#3b3b4f;
-border-color:white;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
 }
-
+input[type="file"]{
+  padding: 1px 2px;
+}
 /*The rem unit stands for root em, and is relative to the
    font size of the html element.
    add a margin of 0.5rem 0, to separate them from each other.
