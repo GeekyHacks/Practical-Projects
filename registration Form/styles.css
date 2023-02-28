@@ -40,6 +40,12 @@ p:last-of-type { }
 fieldset:last-of-type{
   border-bottom:none;
 }
+
+
+input, textarea, select{
+  width: 100%;
+  margin: 10px 0 0 0; /*top have margin only*/
+}
 /*The rem unit stands for root em, and is relative to the
    font size of the html element.
    add a margin of 0.5rem 0, to separate them from each other.
@@ -47,4 +53,13 @@ fieldset:last-of-type{
 label {
   display: block;
   margin: 0.5rem 0;
+}
+/*This will remove the earlier rule which set all the input
+ elements to width: 100%.*/
+ .inline{
+  width: unset;
+  margin:0 0.5em 0 0;
+  vertical-align: middle;
+
+  
 }
