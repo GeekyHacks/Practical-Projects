@@ -75,13 +75,23 @@ The email type only allows emails with a @ and a . in the domain.
         /></label>
         <!--the select element. The select element is a container for a 
           group of option elements, and the option element acts 
-          as a label for each dropdown option. Both elements require closing tags-->
+          as a label for each dropdown option. Both elements require closing tags
+        Submitting the form with an option selected would not send
+         a useful value to the server. As such, each option needs
+          to be given a value attribute. 
+        Without which, the text content of the option will be submitted to the server.
+        -->
           <label for=""> How did you hear about us? <select name="" id=""> <option value=""></option>
-            <option>(select one)</option>
-            <option>News</option>
-            <option>YouTube Channel</option>
-            <option>Forum</option>
-            <option>Other</option> </select></label>
+            <option value="">(select one)</option>
+            <option value="1">News</option>
+            <option value="2">YouTube Channel</option>
+            <option value="3">Forum</option>
+            <option value="4">Other</option> </select></label>
+
+            <!--The textarea element acts like an input element of type text, 
+              but comes with the added benefit of being able
+               to receive multi-line text, and an initial number of text rows and columns.-->
+               <label for="">Provide a bio: <textarea name="" id="" cols="30" rows="10"></textarea></label>
       </fieldset>
       <fieldset></fieldset>
       <!-- The first input element with a type of submit is automatically set 
