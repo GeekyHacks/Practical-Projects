@@ -1,0 +1,28 @@
+
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  svg {
+    width: 200px;
+    background-color: aquamarine;
+  }
+
+
+
+.container1 {
+ background-color: blue;
+    margin: auto;
+  }
+  .container2 {
+ color: beige;
+    margin: auto;
+  }
+  
+  .svg-circle:hover + .svg-text-group {
+    opacity: 0;
+  }
+  
