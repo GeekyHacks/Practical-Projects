@@ -21,4 +21,20 @@
     width: 100%;
     max-width: 350px;
     height: 300px;
+
   }  
+  /* Flexbox is a one-dimensional CSS layout that can control 
+the way items are spaced out and aligned within a container.
+To use it, give an element a display property of flex.
+ This will make the element a flex container.
+ Any direct children of a flex container are called flex items.
+ The justify-content property determines how the items inside
+  a flex container are positioned along the main axis,
+  affecting their position and the space around them.
+ */
+ .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
