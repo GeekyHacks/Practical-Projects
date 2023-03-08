@@ -29,9 +29,20 @@ making it 110px. That is what box-sizing: border-box does. */
      space between them once there are more than one. */
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    padding: 15px;
+    height: 90px;
+    padding: 20px;
   }
+  /* left - center - right*/
+  .logo-left {
+    display: flex;
+    align-items: center;
+   }
+   
+   .logo-left #menu {
+/* padding top and bottom to 0 and its padding left and right to 7px */
+    padding: 0 7px;
+    cursor: pointer;
+   }
 
   main {
     /*100vh means the total height that is visible in a browser without 
