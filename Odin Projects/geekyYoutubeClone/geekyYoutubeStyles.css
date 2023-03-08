@@ -22,15 +22,20 @@ making it 110px. That is what box-sizing: border-box does. */
   body {
     font-family: 'Roboto', sans-serif;
   }
-
+  /*this will style icons better*/
+  .material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 7px;
+    cursor: pointer;
+  }
   .header {
     display: flex;
     /*Justify-content: space-between means we want the contents in the header to have
      space between them once there are more than one. */
     justify-content: space-between;
     align-items: center;
-    height: 90px;
-    padding: 20px;
+    height: 70px;
+    padding: 15px;
   }
   /* left - center - right*/
   .logo-left {
@@ -56,16 +61,26 @@ making it 110px. That is what box-sizing: border-box does. */
    .search-center input {
     width: 600px;
     padding:10px;
-    border: 0;
+    border: 1px silver;
     height: 100%;
-    border-radius: 2px 0 0 2px
+    border-radius: 2px 0 0 2px;
+    
+
   }
   
   input:focus {
     outline: none;
     border: 1px solid #ddd;
   }
-
+  .search-centers button {
+    height: 100%;
+    width: 60px;
+    border: none;
+ 
+  }
+  .mic {
+    margin-top: 10px;
+  }
 
   main {
     /*100vh means the total height that is visible in a browser without 
