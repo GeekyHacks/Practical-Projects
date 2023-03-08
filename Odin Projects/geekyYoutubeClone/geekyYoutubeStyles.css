@@ -1,0 +1,58 @@
+
+/* We use it to link to the Google font called Roboto so that we can use it as the font of our website.*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+/* 
+The asterisk * is a CSS selector that selects all HTML tags on our page.
+ We set their margin and padding to 0. We then set their box-sizing
+  to border-box. Why do we do that?
+We want width or height, border, margin, and padding to add up to be the total
+ length. This is what I mean: in CSS, if a box has width of 100px and padding 
+ of 10px, the width of the box will now be 110px
+But we don't want that – we want everything to be 100px. 
+Width should still be 100px including the margin of 10px instead of 
+making it 110px. That is what box-sizing: border-box does. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .header {
+    display: flex;
+    /*Justify-content: space-between means we want the contents in the header to have
+     space between them once there are more than one. */
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+  }
+
+  main {
+    /*100vh means the total height that is visible in a browser without 
+    scrolling. And we use 
+    calc ( 100vh - 70px) to run a calculation that subtract 70px from 100vh. */
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+  }
+
+  .side-bar {
+    height: 100%;
+    width: 17%;
+    background-color: white;
+    /*When Twitter loads 10 tweets at once, you can’t see everything at once and you have to scroll, right? 
+    In this case, we hide the scroll bar */
+    overflow-y: hidden;
+  } 
+/*We use this media query to make a website responsive on mobile, tablets, and desktop.  */
+  @media (max-width: 768px) {
+    .side-bar {
+      display: none;
+    }
+  }
