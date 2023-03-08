@@ -44,6 +44,29 @@ making it 110px. That is what box-sizing: border-box does. */
     cursor: pointer;
    }
 
+   .search-center {
+    display: flex;
+   }
+   
+   .search-center form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+   }
+   .search-center input {
+    width: 600px;
+    padding:10px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+  }
+
+
   main {
     /*100vh means the total height that is visible in a browser without 
     scrolling. And we use 
