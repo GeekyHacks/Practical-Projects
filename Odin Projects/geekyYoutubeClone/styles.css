@@ -17,7 +17,7 @@ making it 110px. That is what box-sizing: border-box does. */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
   body {
     font-family: 'Roboto', sans-serif;
@@ -131,6 +131,7 @@ making it 110px. That is what box-sizing: border-box does. */
     margin-top: 15px;
   }
   .nav-link {
+    text-decoration: none;
     display: flex;
     align-items: center;
     padding: 12px 25px;
