@@ -28,6 +28,8 @@ making it 110px. That is what box-sizing: border-box does. */
     padding: 0 7px;
     cursor: pointer;
   }
+
+  /* header section -------------------------------------*/
   .header {
     display: flex;
     /*Justify-content: space-between means we want the contents in the header to have
@@ -91,6 +93,9 @@ making it 110px. That is what box-sizing: border-box does. */
     background-color: #f9f9f9;
   }
 
+  /* sidebar section -------------------------------------*/
+
+
   .side-bar {
     height: 100%;
     width: 17%;
@@ -104,4 +109,116 @@ making it 110px. That is what box-sizing: border-box does. */
     .side-bar {
       display: none;
     }
+    .geekyLogo{
+      display: none;
+    }
+    .search {
+      display: none;
+    }
+  }
+  @media (max-width: 900px) {
+    .search input {
+      width: 25rem;
+    }
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    /* flex-direction determines whether we want the children to appear in a column (vertical) or row (horizontal) */
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+  }
+  
+ .nav-link span {
+    margin-left: 15px;
+  }
+  
+ .nav-link:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+ 
+ .active {
+    background: #e5e5e5;
+ }
+ hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+  }
+
+  /* content section -------------------------------------*/
+
+  .content {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+  }
+  
+  .videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+ 
+
+  .video {
+    width: 270px;
+    margin-bottom: 30px;
+  }
+  iframe {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 30px;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 170px;
+  }
+  
+  .thumbnail img {
+    object-fit: cover;
+    height: 94%;
+    width: 100%;
+  }
+  .author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .details {
+    display: flex;
+  }
+   
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+   
+  .title a,
+  span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
   }
