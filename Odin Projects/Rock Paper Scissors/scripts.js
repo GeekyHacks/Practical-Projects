@@ -1,9 +1,17 @@
 
-const Choices = ["Rock", "Paper", "Scissors"];
+    const Choices = ["Rock", "Paper", "Scissors"];
 
-function getComputerChoice(Choices) {    
-    var Choice = Choices[Math.floor(Math.random() * Choices.length)];
+    function getComputerChoice() {    
+        var Choice = Choices[Math.floor(Math.random() * Choices.length)];
 
-    return Choice;
-}
-console.log(getComputerChoice(Choices));
+        return Choice;
+    }
+    console.log(getComputerChoice(Choices));
+
+function playRound(playerSelection, computerSelection) {
+    // your code here!
+  }
+   
+  const playerSelection = "rock";
+  const computerSelection = getComputerChoice();
+  console.log(playRound(playerSelection, computerSelection));
